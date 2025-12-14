@@ -281,9 +281,17 @@ kbd {
     gap: 20px;
 }
 
-.project-container {
-    display: block;
-    /* Default to stack on PC */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.glass-card:hover {
+    transform: translateY(-2px);
 }
 
 .overlay-content::-webkit-scrollbar {
@@ -419,8 +427,43 @@ kbd {
         font-size: 0.7rem;
     }
 
+    /* Mobile Card Optimizations */
+    .glass-card {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .glass-card h3 {
+        font-size: 1rem !important;
+        /* Force smaller header */
+        margin-bottom: 4px !important;
+    }
+
+    .glass-card span {
+        font-size: 0.8rem !important;
+        /* Smaller date */
+    }
+
+    .glass-card p {
+        font-size: 0.85rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .glass-card ul {
+        padding-left: 15px !important;
+        margin: 0 !important;
+    }
+
+    .glass-card li {
+        font-size: 0.8rem !important;
+        margin-bottom: 4px !important;
+        line-height: 1.4 !important;
+    }
+
     .project-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        /* Revert to 1 col for projects if using project-grid class (unused now but safe) */
         gap: 10px;
     }
 
@@ -444,6 +487,7 @@ kbd {
 
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
+        /* Keep 2 cols for skills */
         gap: 10px;
     }
 

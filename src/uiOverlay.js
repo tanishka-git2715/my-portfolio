@@ -132,7 +132,7 @@ export class UIOverlay {
                     <div style="text-align: left; max-width: 800px; margin: 0 auto; padding-top: 0;">
                         <h2 style="color: #d4a373; font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid #d4a373; display: inline-block;">Work Experience</h2>
                         
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
+                        <div class="glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
                                 <h3 style="margin: 0; font-size: 1.1rem; color: #fff; font-weight: 500;">Chordy.ai (Remote)</h3>
                                 <span style="color: #fff; font-size: 0.9rem;">Nov'25 – Present</span>
@@ -145,7 +145,7 @@ export class UIOverlay {
                             </ul>
                         </div>
 
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                        <div class="glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
                                 <h3 style="margin: 0; font-size: 1.1rem; color: #fff; font-weight: 500;">ElectraWireless (US Based Startup) (Remote)</h3>
                                 <span style="color: #fff; font-size: 0.9rem;">Sep'25 – Dec'25</span>
@@ -158,7 +158,7 @@ export class UIOverlay {
                             </ul>
                         </div>
 
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                        <div class="glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
                                 <h3 style="margin: 0; font-size: 1.1rem; color: #fff; font-weight: 500;">SBI Cards (Gurgaon)</h3>
                                 <span style="color: #fff; font-size: 0.9rem;">Jun'25 – Jul'25</span>
@@ -171,7 +171,7 @@ export class UIOverlay {
                             </ul>
                         </div>
 
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                        <div class="glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
                                 <h3 style="margin: 0; font-size: 1.1rem; color: #fff; font-weight: 500;">Aarogya Vatika (Remote)</h3>
                                 <span style="color: #fff; font-size: 0.9rem;">Jun'25 – Jul'25</span>
@@ -184,7 +184,7 @@ export class UIOverlay {
                             </ul>
                         </div>
 
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px;">
+                        <div class="glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
                                 <h3 style="margin: 0; font-size: 1.1rem; color: #fff; font-weight: 500;">Marketing Makhni (Remote)</h3>
                                 <span style="color: #fff; font-size: 0.9rem;">Mar'25 – May'25</span>
@@ -203,116 +203,114 @@ export class UIOverlay {
                     <div style="text-align: left; max-width: 800px; margin: 0 auto; padding-top: 0;">
                         <h2 style="color: #d4a373; font-size: 2rem; margin-bottom: 20px; border-bottom: 2px solid #d4a373; display: inline-block;">Projects</h2>
 
-                        <div class="project-container">
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Ayurvedic Healthcare Platform</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">Sep'25</span>
-                                </div>
-                                <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Ayurdev</p>
-                                
-                                <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Built a <b>full-stack Ayurvedic healthcare platform</b> for consultations, appointments, and digital patient records.</li>
-                                    <li style="margin-bottom: 8px;">Integrated <b>AI-powered features</b> including prescription summarization, Prakruti analysis, personalized diet plans, and LLM-based chat/voice assistants.</li>
-                                    <li>Developed a secure <b>React–Node.js–MongoDB stack</b> with role-based authentication and admin dashboards.</li>
-                                </ul>
-
-                                <a href="https://github.com/tanishka-git2715/ayurveda-rag-project" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                                    </svg>
-                                    View on GitHub
-                                </a>
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Ayurvedic Healthcare Platform</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">Sep'25</span>
                             </div>
+                            <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Ayurdev</p>
+                            
+                            <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Built a <b>full-stack Ayurvedic healthcare platform</b> for consultations, appointments, and digital patient records.</li>
+                                <li style="margin-bottom: 8px;">Integrated <b>AI-powered features</b> including prescription summarization, Prakruti analysis, personalized diet plans, and LLM-based chat/voice assistants.</li>
+                                <li>Developed a secure <b>React–Node.js–MongoDB stack</b> with role-based authentication and admin dashboards.</li>
+                            </ul>
 
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Automatic Speech Recognition (ASR) Model</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">Sep'25</span>
-                                </div>
-                                <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Fine-tuned OpenAI Whisper-Small</p>
-                                
-                                <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Fine-tuned <b>OpenAI Whisper-Small</b> for Hindi speech recognition, achieving <b>2.98% Word Error Rate (WER)</b> on the evaluation set.</li>
-                                    <li style="margin-bottom: 8px;">Optimized training using <b>AdamW (fused)</b> with <b>mixed-precision (AMP)</b> and a linear learning rate scheduler, ensuring stable convergence over 3 epochs.</li>
-                                    <li>Built and evaluated the model using <b>PyTorch 2.8</b> and <b>Hugging Face Transformers</b>, achieving a final validation loss of 1.0656 with efficient batch training.</li>
-                                </ul>
+                            <a href="https://github.com/tanishka-git2715/ayurveda-rag-project" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
 
-                                <a href="https://github.com/tanishka-git2715/whisper-hi-ft" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                                    </svg>
-                                    View on GitHub
-                                </a>
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Automatic Speech Recognition (ASR) Model</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">Sep'25</span>
                             </div>
+                            <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Fine-tuned OpenAI Whisper-Small</p>
+                            
+                            <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Fine-tuned <b>OpenAI Whisper-Small</b> for Hindi speech recognition, achieving <b>2.98% Word Error Rate (WER)</b> on the evaluation set.</li>
+                                <li style="margin-bottom: 8px;">Optimized training using <b>AdamW (fused)</b> with <b>mixed-precision (AMP)</b> and a linear learning rate scheduler, ensuring stable convergence over 3 epochs.</li>
+                                <li>Built and evaluated the model using <b>PyTorch 2.8</b> and <b>Hugging Face Transformers</b>, achieving a final validation loss of 1.0656 with efficient batch training.</li>
+                            </ul>
 
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">SynergyX</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">July'25</span>
-                                </div>
-                                
-                                <ul style="color: #ddd; margin: 10px 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Built a <b>gamified platform</b> empowering users to learn in-demand skills, access gig opportunities, and collaborate in student communities.</li>
-                                    <li>Implemented <b>interactive front-end components</b> with seamless UX, enabling faster prototype iterations.</li>
-                                </ul>
+                            <a href="https://github.com/tanishka-git2715/whisper-hi-ft" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
 
-                                <a href="https://github.com/tanishka-git2715/synergyx" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                                    </svg>
-                                    View on GitHub
-                                </a>
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">SynergyX</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">July'25</span>
                             </div>
+                            
+                            <ul style="color: #ddd; margin: 10px 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Built a <b>gamified platform</b> empowering users to learn in-demand skills, access gig opportunities, and collaborate in student communities.</li>
+                                <li>Implemented <b>interactive front-end components</b> with seamless UX, enabling faster prototype iterations.</li>
+                            </ul>
 
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">FRP Composites Residual Strength Prediction</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">April'25</span>
-                                </div>
-                                <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Machine Learning Project</p>
-                                
-                                <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Built and fine-tuned regression models (<b>Random Forest</b>, <b>Gradient Boosting</b>, <b>MLP</b>) in <b>Python</b>, achieving high predictive accuracy.</li>
-                                    <li style="margin-bottom: 8px;">Applied <b>feature engineering</b> and <b>PCA-based dimensionality reduction</b> to enhance efficiency.</li>
-                                    <li>Developed an <b>automated benchmarking pipeline</b> to validate model robustness and reliability.</li>
-                                </ul>
+                            <a href="https://github.com/tanishka-git2715/synergyx" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
 
-                                <a href="https://github.com/tanishka-git2715/ml-project" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                                    </svg>
-                                    View on GitHub
-                                </a>
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">FRP Composites Residual Strength Prediction</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">April'25</span>
                             </div>
+                            <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Machine Learning Project</p>
+                            
+                            <ul style="color: #ddd; margin: 0 0 15px 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Built and fine-tuned regression models (<b>Random Forest</b>, <b>Gradient Boosting</b>, <b>MLP</b>) in <b>Python</b>, achieving high predictive accuracy.</li>
+                                <li style="margin-bottom: 8px;">Applied <b>feature engineering</b> and <b>PCA-based dimensionality reduction</b> to enhance efficiency.</li>
+                                <li>Developed an <b>automated benchmarking pipeline</b> to validate model robustness and reliability.</li>
+                            </ul>
 
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Food Delivery Analytics Platform</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">March'25</span>
-                                </div>
-                                <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Zomato Case Study</p>
-                                
-                                <ul style="color: #ddd; margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Developed an <b>AI-powered logistics framework</b> combining predictive analytics for demand forecasting, route optimization, and dynamic pricing.</li>
-                                    <li style="margin-bottom: 8px;">Proposed <b>gamification features</b> and <b>group-ordering strategies</b> to boost user engagement and lifetime value, projecting a potential <b>15–20% revenue increase</b>.</li>
-                                    <li>Delivered a <b>scalable blueprint</b> for a next-gen food delivery ecosystem, emphasizing AI-driven operational efficiency and customer experience.</li>
-                                </ul>
-                            </div>
+                            <a href="https://github.com/tanishka-git2715/ml-project" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #667eea; text-decoration: none; font-weight: 500; font-size: 0.95rem; hover: {text-decoration: underline;}">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.285 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
 
-                            <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin-bottom: 20px; transition: transform 0.2s; hover: {transform: translateY(-2px);}">
-                                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
-                                    <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Social Media Analytics Platform</h3>
-                                    <span style="color: #fff; font-size: 0.9rem;">Jan'25</span>
-                                </div>
-                                <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">DBMS Project</p>
-                                
-                                <ul style="color: #ddd; margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
-                                    <li style="margin-bottom: 8px;">Developed a platform to analyze <b>user interactions</b>, enabling businesses and influencers to extract behavioral patterns.</li>
-                                    <li style="margin-bottom: 8px;">Implemented <b>real-time dashboards</b> to track key metrics (likes, shares, engagement trends), enhancing decision-making.</li>
-                                    <li>Designed <b>scalable data models and DBMS queries</b> to efficiently process large datasets under heavy loads.</li>
-                                </ul>
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Food Delivery Analytics Platform</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">March'25</span>
                             </div>
+                            <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">Zomato Case Study</p>
+                            
+                            <ul style="color: #ddd; margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Developed an <b>AI-powered logistics framework</b> combining predictive analytics for demand forecasting, route optimization, and dynamic pricing.</li>
+                                <li style="margin-bottom: 8px;">Proposed <b>gamification features</b> and <b>group-ordering strategies</b> to boost user engagement and lifetime value, projecting a potential <b>15–20% revenue increase</b>.</li>
+                                <li>Delivered a <b>scalable blueprint</b> for a next-gen food delivery ecosystem, emphasizing AI-driven operational efficiency and customer experience.</li>
+                            </ul>
+                        </div>
+
+                        <div class="glass-card">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px;">
+                                <h3 style="margin: 0; font-size: 1.3rem; color: #fff; font-weight: 600;">Social Media Analytics Platform</h3>
+                                <span style="color: #fff; font-size: 0.9rem;">Jan'25</span>
+                            </div>
+                            <p style="margin: 0 0 10px; color: #aaa; font-style: italic; font-size: 1rem;">DBMS Project</p>
+                            
+                            <ul style="color: #ddd; margin: 0; padding-left: 20px; font-size: 0.95rem; line-height: 1.6;">
+                                <li style="margin-bottom: 8px;">Developed a platform to analyze <b>user interactions</b>, enabling businesses and influencers to extract behavioral patterns.</li>
+                                <li style="margin-bottom: 8px;">Implemented <b>real-time dashboards</b> to track key metrics (likes, shares, engagement trends), enhancing decision-making.</li>
+                                <li>Designed <b>scalable data models and DBMS queries</b> to efficiently process large datasets under heavy loads.</li>
+                            </ul>
                         </div>
                     </div>
                 `;
