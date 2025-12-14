@@ -1,21 +1,6 @@
-# 3D Interactive Portfolio - MVP
+# 3D Interactive Portfolio
 
 A game-style 3D portfolio built with Three.js featuring character controls and interactive zones.
-
-## Features
-
-✨ **3D Environment** - Fully interactive 3D scene with lighting and shadows  
-🎮 **Character Control** - Move with WASD or Arrow keys  
-📍 **6 Interactive Zones** - Walk into colored platforms to view content:
-- 🏠 Home/About (Purple)
-- 💼 Experience (Red)
-- 🚀 Projects (Blue)
-- 🧠 Skills (Green)
-- 🏆 Achievements (Orange)
-- 📞 Contact (Purple)
-
-🎨 **Smooth Animations** - GSAP-powered UI transitions  
-📱 **Responsive** - Works on desktop browsers
 
 ## Quick Start
 
