@@ -274,6 +274,17 @@ kbd {
 }
 
 /* Scrollbar */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-container {
+    display: block;
+    /* Default to stack on PC */
+}
+
 .overlay-content::-webkit-scrollbar {
     width: 8px;
 }
@@ -428,5 +439,21 @@ kbd {
         line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .project-container>div {
+        margin-bottom: 0 !important;
+        height: 100%;
     }
 }
