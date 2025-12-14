@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tanishka Khandelwal - Builder, AI & Product, Full-Stack Developer. Computer Science undergraduate passionate about building AI-powered products.">
+    <meta property="og:title" content="Tanishka Khandelwal - Portfolio">
+    <meta property="og:description" content="Builder • AI & Product • Full-Stack Developer">
+    <meta property="og:type" content="website">
+
+    <title>Tanishka Khandelwal - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="logo">
+            <div class="logo-circle">TK</div>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2" />
+                <path
+                    d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17 10.5C16.1 13.5 13.4 15.7 10.2 15.9C6.3 16.2 3 13.2 3 9.5C3 6.8 4.5 4.5 6.7 3.3C7 3.1 7.4 3.4 7.3 3.7C6.9 5.2 7.1 6.9 8 8.3C9.4 10.5 11.9 11.6 14.4 11C14.7 11 15 11.3 14.9 11.6C14.6 11.9 14.3 12.2 14 12.4"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-header">
+            <h2 class="nav-logo">Portfolio</h2>
+            <div class="nav-logo-underline"></div>
+        </div>
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-tab" data-tab="experience">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="7" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                    <path d="M16 21V5C16 3.89543 15.1046 3 14 3H10C8.89543 3 8 3.89543 8 5V21" stroke="currentColor"
+                        stroke-width="2" />
+                </svg>
+                <span>Experience</span>
+            </button>
+            <button class="nav-tab" data-tab="skills">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Skills</span>
+            </button>
+            <button class="nav-tab" data-tab="projects">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span>Projects</span>
+            </button>
+            <button class="nav-tab" data-tab="achievements">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="8" r="6" stroke="currentColor" stroke-width="2" />
+                    <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>POR & Achievements</span>
+            </button>
+            <button class="nav-tab" data-tab="contact">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Contact</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with MacBook Mockup -->
+    <section class="hero-section">
+        <div class="macbook-container">
+            <img src="assets/macbook.png" alt="MacBook" class="macbook-mockup">
+            <div class="macbook-screen">
+                <div class="hero-content">
+                    <img src="assets/profile.png" alt="Tanishka Khandelwal" class="hero-image">
+                    <h1 class="hero-name">TANISHKA KHANDELWAL</h1>
+                    <p class="hero-tagline">BUILDER • AI & PRODUCT • FULL-STACK DEVELOPER</p>
+                    <div class="hero-icons">
+                        <a href="mailto:tanishkakhandelwal78@gmail.com" class="hero-icon-link" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 4H17C18.1 4 19 4.9 19 6V14C19 15.1 18.1 16 17 16H3C1.9 16 1 15.1 1 14V6C1 4.9 1.9 4 3 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19 6L10 11L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/tanishka-khandelwal" target="_blank" rel="noopener noreferrer"
+                            class="hero-icon-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H16C17.1 18 18 17.1 18 16V4C18 2.9 17.1 2 16 2ZM7 15H5V8H7V15ZM6 7C5.4 7 5 6.6 5 6C5 5.4 5.4 5 6 5C6.6 5 7 5.4 7 6C7 6.6 6.6 7 6 7ZM15 15H13V11.5C13 10.7 12.3 10 11.5 10C10.7 10 10 10.7 10 11.5V15H8V8H10V9C10.5 8.4 11.2 8 12 8C13.7 8 15 9.3 15 11V15Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/tanishka-khandelwal" target="_blank" rel="noopener noreferrer"
+                            class="hero-icon-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0C4.477 0 0 4.477 0 10C0 14.418 2.865 18.166 6.839 19.489C7.339 19.579 7.521 19.267 7.521 18.997C7.521 18.756 7.512 18.007 7.508 17.243C4.726 17.847 4.139 15.967 4.139 15.967C3.685 14.81 3.029 14.499 3.029 14.499C2.121 13.88 3.098 13.892 3.098 13.892C4.101 13.963 4.629 14.926 4.629 14.926C5.521 16.455 6.97 16.013 7.539 15.756C7.631 15.108 7.889 14.667 8.175 14.416C5.955 14.163 3.62 13.309 3.62 9.475C3.62 8.385 4.01 7.496 4.649 6.797C4.546 6.543 4.203 5.523 4.747 4.146C4.747 4.146 5.586 3.872 7.497 5.162C8.31 4.937 9.157 4.825 10 4.821C10.843 4.825 11.691 4.937 12.505 5.162C14.415 3.872 15.253 4.146 15.253 4.146C15.798 5.523 15.455 6.543 15.352 6.797C15.992 7.496 16.38 8.385 16.38 9.475C16.38 13.319 14.041 14.16 11.813 14.409C12.172 14.721 12.491 15.336 12.491 16.275C12.491 17.605 12.48 18.676 12.48 18.997C12.48 19.27 12.659 19.585 13.167 19.488C17.137 18.162 20 14.416 20 10C20 4.477 15.523 0 10 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator"
+            onclick="document.querySelector('.container').scrollIntoView({behavior: 'smooth'})">
+            <span>SCROLL DOWN</span>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- HOME TAB -->
+        <section id="home" class="tab-content active">
+            <!-- Profile Header -->
+            <div class="profile-header fade-in">
+                <img src="assets/profile.png" alt="Tanishka Khandelwal" class="profile-image">
+                <div class="profile-info">
+                    <h1 class="profile-name">Tanishka Khandelwal</h1>
+                    <p class="profile-tagline">Builder • AI & Product • Full-Stack Developer</p>
+                    <div class="contact-icons">
+                        <a href="mailto:tashukhandelwal27@gmail.com" aria-label="Email" class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 4H17C18.1 4 19 4.9 19 6V14C19 15.1 18.1 16 17 16H3C1.9 16 1 15.1 1 14V6C1 4.9 1.9 4 3 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19 6L10 11L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/tanishka-khandelwal" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn" class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H16C17.1 18 18 17.1 18 16V4C18 2.9 17.1 2 16 2ZM7 15H5V8H7V15ZM6 7C5.4 7 5 6.6 5 6C5 5.4 5.4 5 6 5C6.6 5 7 5.4 7 6C7 6.6 6.6 7 6 7ZM15 15H13V11.5C13 10.7 12.3 10 11.5 10C10.7 10 10 10.7 10 11.5V15H8V8H10V9C10.5 8.4 11.2 8 12 8C13.7 8 15 9.3 15 11V15Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/tanishka-khandelwal" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 0C4.477 0 0 4.477 0 10C0 14.418 2.865 18.166 6.839 19.489C7.339 19.577 7.521 19.267 7.521 19C7.521 18.766 7.513 18.15 7.508 17.326C4.726 17.935 4.139 16.026 4.139 16.026C3.685 14.87 3.029 14.561 3.029 14.561C2.121 13.937 3.098 13.95 3.098 13.95C4.101 14.02 4.629 14.986 4.629 14.986C5.521 16.504 6.97 16.064 7.539 15.806C7.631 15.159 7.889 14.719 8.175 14.467C5.955 14.212 3.62 13.351 3.62 9.507C3.62 8.411 4.01 7.518 4.649 6.817C4.546 6.562 4.203 5.543 4.747 4.16C4.747 4.16 5.586 3.889 7.497 5.186C8.31 4.962 9.157 4.85 10 4.846C10.843 4.85 11.691 4.962 12.506 5.186C14.415 3.889 15.253 4.16 15.253 4.16C15.798 5.543 15.455 6.562 15.352 6.817C15.992 7.518 16.38 8.411 16.38 9.507C16.38 13.361 14.041 14.209 11.813 14.461C12.172 14.772 12.494 15.385 12.494 16.319C12.494 17.668 12.483 18.754 12.483 19C12.483 19.269 12.663 19.582 13.169 19.488C17.137 18.163 20 14.417 20 10C20 4.477 15.523 0 10 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">50K+</span>
+                        <span class="stat-label">Impact</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio Section -->
+            <div class="card fade-in">
+                <h2 class="section-title">About</h2>
+                <p class="bio-text">I'm a Computer Science undergraduate passionate about building AI-powered products
+                    at the intersection of technology, design, and business. I enjoy turning complex ideas into real,
+                    user-centric solutions and leading projects from concept to execution.</p>
+            </div>
+
+            <!-- Education -->
+            <div class="card fade-in">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3 class="education-institution">Netaji Subhash University of Technology (NSUT)</h3>
+                    <p class="education-degree">BTech in CSE (MAC)</p>
+                    <p class="education-year">2023 – 2027</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="education-institution">Lovely Public Sr. Sec. School, Delhi</h3>
+                    <p class="education-degree">CBSE XII – 92.2%</p>
+                    <p class="education-year">2022 – 2023</p>
+                </div>
+                <div class="education-item">
+                    <h3 class="education-institution">Lovely Public Sr. Sec. School, Delhi</h3>
+                    <p class="education-degree">CBSE X – 97.2%</p>
+                    <p class="education-year">2020 – 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE TAB -->
+        <section id="experience" class="tab-content">
+            <h2 class="page-title fade-in">Experience</h2>
+
+            <div class="experience-card card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Technical Lead</h3>
+                        <p class="experience-company">Chordy.ai • Remote</p>
+                        <p class="experience-date">Nov 2025 – Present</p>
+                    </div>
+                    <button class="expand-btn" aria-label="Expand details">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Leading development of Chordy.ai, an AI superconnector for emotion- and intent-based
+                            matchmaking</li>
+                        <li>Designed the core Resonance Engine combining intent modeling, purpose alignment, and
+                            emotional signals</li>
+                        <li>Driving product strategy, early user onboarding, and iteration toward product-market fit
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">SDE & Marketing Strategist Intern</h3>
+                        <p class="experience-company">ElectraWireless • Remote</p>
+                        <p class="experience-date">Sep 2025 – Dec 2025</p>
+                    </div>
+                    <button class="expand-btn" aria-label="Expand details">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Built real-time control and smart notification systems</li>
+                        <li>Developed the Cognitive Core of the AI assistant, including decision logic and pipelines
+                        </li>
+                        <li>Increased social media engagement by 25% by simplifying deep-tech concepts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Information Technology Intern</h3>
+                        <p class="experience-company">SBI Cards • Gurgaon</p>
+                        <p class="experience-date">Jun 2025 – Jul 2025</p>
+                    </div>
+                    <button class="expand-btn" aria-label="Expand details">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Worked on Sprint digital credit card platform (BRDs & feature alignment)</li>
+                        <li>Improved AI-powered KYC workflows, reducing onboarding time by 20%</li>
+                        <li>Conducted competitive benchmarking for YONO Card</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">AI Intern</h3>
+                        <p class="experience-company">Aarogya Vatika • Remote</p>
+                        <p class="experience-date">Jun 2025 – Jul 2025</p>
+                    </div>
+                    <button class="expand-btn" aria-label="Expand details">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Built an AI-powered wellness platform with ML recommendations</li>
+                        <li>Developed NLP chatbot using RAG pipelines (LangChain + Vector DB)</li>
+                        <li>Implemented doctor feedback loops for continuous model improvement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card card fade-in">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Business Development Intern</h3>
+                        <p class="experience-company">Marketing Makhni • Remote</p>
+                        <p class="experience-date">Mar 2025 – May 2025</p>
+                    </div>
+                    <button class="expand-btn" aria-label="Expand details">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="experience-details">
+                    <ul>
+                        <li>Secured 30+ brand collaborations</li>
+                        <li>Led client acquisition end-to-end</li>
+                        <li>Increased lead conversion by 25% using CRM and optimized messaging</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS TAB -->
+        <section id="skills" class="tab-content">
+            <h2 class="page-title fade-in">Skills</h2>
+
+            <div class="skills-category fade-in">
+                <h3 class="skills-category-title">Programming & Frameworks</h3>
+                <div class="skills-grid">
+                    <span class="skill-chip">C++</span>
+                    <span class="skill-chip">Python</span>
+                    <span class="skill-chip">MATLAB</span>
+                    <span class="skill-chip">HTML</span>
+                    <span class="skill-chip">CSS</span>
+                    <span class="skill-chip">JavaScript</span>
+                    <span class="skill-chip">React</span>
+                    <span class="skill-chip">TypeScript</span>
+                    <span class="skill-chip">Node.js</span>
+                    <span class="skill-chip">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3 class="skills-category-title">Machine Learning & Data</h3>
+                <div class="skills-grid">
+                    <span class="skill-chip">SQL</span>
+                    <span class="skill-chip">PyTorch</span>
+                    <span class="skill-chip">TensorFlow</span>
+                    <span class="skill-chip">Scikit-learn</span>
+                    <span class="skill-chip">NumPy</span>
+                    <span class="skill-chip">Pandas</span>
+                    <span class="skill-chip">Matplotlib</span>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3 class="skills-category-title">Tools & Utilities</h3>
+                <div class="skills-grid">
+                    <span class="skill-chip">Docker</span>
+                    <span class="skill-chip">Git</span>
+                    <span class="skill-chip">Bash</span>
+                    <span class="skill-chip">Markdown</span>
+                    <span class="skill-chip">Excel</span>
+                    <span class="skill-chip">Generative AI & Automation</span>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3 class="skills-category-title">Product & Business</h3>
+                <div class="skills-grid">
+                    <span class="skill-chip">Product Management</span>
+                    <span class="skill-chip">Digital Marketing</span>
+                    <span class="skill-chip">Client Acquisition</span>
+                    <span class="skill-chip">User Research</span>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3 class="skills-category-title">Soft Skills</h3>
+                <div class="skills-grid">
+                    <span class="skill-chip">Leadership</span>
+                    <span class="skill-chip">Team Management</span>
+                    <span class="skill-chip">Communication</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS TAB -->
+        <section id="projects" class="tab-content">
+            <h2 class="page-title fade-in">Projects</h2>
+
+            <div class="project-card card fade-in">
+                <img src="assets/project-ayurdev.png" alt="Ayurdev Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Ayurdev — Ayurvedic Healthcare Platform</h3>
+                    <p class="project-date">September 2025</p>
+                    <p class="project-description">Full-stack healthcare platform for consultations and records with AI
+                        features: prescription summarization, Prakruti analysis, diet plans, LLM chat/voice assistant
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">AI/ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card fade-in">
+                <img src="assets/project-frp.png" alt="FRP Composites Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">FRP Composites Residual Strength Prediction</h3>
+                    <p class="project-date">April 2025</p>
+                    <p class="project-description">ML regression models (RF, GB, MLP) with high accuracy. Feature
+                        engineering & PCA. Automated benchmarking pipeline</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card fade-in">
+                <img src="assets/project-zomato.png" alt="Zomato Analytics Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Food Delivery Analytics Platform — Zomato Case Study</h3>
+                    <p class="project-date">March 2025</p>
+                    <p class="project-description">AI-powered logistics framework for demand forecasting and routing.
+                        Gamification & group ordering strategy. Estimated 15–20% revenue uplift</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Product Strategy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card card fade-in">
+                <img src="assets/project-social.png" alt="Social Media Analytics Project" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Social Media Analytics Platform</h3>
+                    <p class="project-date">January 2025</p>
+                    <p class="project-description">DBMS-based analytics platform for engagement insights. Real-time
+                        dashboards for likes, shares, trends. Scalable data models for heavy loads</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">DBMS</span>
+                        <span class="tag">Analytics</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS TAB -->
+        <section id="achievements" class="tab-content">
+            <h2 class="page-title fade-in">Positions of Responsibility & Achievements</h2>
+
+            <div class="card fade-in">
+                <h3 class="section-title">Positions of Responsibility</h3>
+
+                <div class="achievement-item">
+                    <h4 class="achievement-title">Founder & Product Lead — Prodizzy</h4>
+                    <p class="achievement-date">Sep 2025 – Present</p>
+                    <ul class="achievement-details">
+                        <li>Built a platform supporting 50,000+ students across 200+ communities</li>
+                        <li>Secured 50+ brand partnerships</li>
+                    </ul>
+                </div>
+
+                <div class="achievement-item">
+                    <h4 class="achievement-title">ISP Ambassador — Internshala</h4>
+                    <p class="achievement-date">Jul 2025 – Aug 2025</p>
+                    <ul class="achievement-details">
+                        <li>Promoted internships and training programs</li>
+                        <li>Increased student registrations via outreach</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <h3 class="section-title">Achievements</h3>
+
+                <div class="achievements-grid">
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🎓</div>
+                        <h4 class="badge-title">SheFi Scholar</h4>
+                        <p class="badge-description">Fully funded Web3 & AI program</p>
+                    </div>
+
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🦈</div>
+                        <h4 class="badge-title">Top 20 — Shark Tank IIITD</h4>
+                        <p class="badge-description">2025</p>
+                    </div>
+
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🥉</div>
+                        <h4 class="badge-title">3rd Place — Product Prodigy</h4>
+                        <p class="badge-description">SpaceCon'25 (500+ teams)</p>
+                    </div>
+
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🥈</div>
+                        <h4 class="badge-title">2nd Place — Founders' Framework</h4>
+                        <p class="badge-description">Moksha'25</p>
+                    </div>
+
+                    <div class="achievement-badge">
+                        <div class="badge-icon">📊</div>
+                        <h4 class="badge-title">97.8 Percentile</h4>
+                        <p class="badge-description">JEE Mains 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT TAB -->
+        <section id="contact" class="tab-content">
+            <h2 class="page-title fade-in">Get In Touch</h2>
+
+            <div class="card fade-in">
+                <p class="contact-intro">Interested in collaborating or have a question? Feel free to reach out!</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input type="text" id="contactName" name="name" class="form-input" placeholder="Your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <input type="email" id="contactEmail" name="email" class="form-input"
+                            placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactNumber" class="form-label">Contact Number</label>
+                        <input type="tel" id="contactNumber" name="phone" class="form-input"
+                            placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Contact Button -->
+    <button class="mobile-contact-btn" id="mobileContactBtn" aria-label="Contact">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 4H17C18.1 4 19 4.9 19 6V14C19 15.1 18.1 16 17 16H3C1.9 16 1 15.1 1 14V6C1 4.9 1.9 4 3 4Z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19 6L10 11L1 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

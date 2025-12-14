@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishka Khandelwal - 3D Portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading 3D Portfolio...</p>
+    </div>
+
+    <!-- Instructions -->
+    <div id="instructions">
+        <div class="instruction-box">
+            <h3>Controls</h3>
+            <p>Use <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or Arrow Keys to move</p>
+            <p>Walk into colored zones to view content</p>
+            <p>Press <kbd>ESC</kbd> to close overlays</p>
+            <p class="mobile-hint" style="display:none; color: #aaa; font-size: 0.8rem; margin-top: 5px;">Double tap
+                joystick to interact</p>
+        </div>
+    </div>
+
+    <!-- Joystick Control -->
+    <div id="joystick-zone">
+        <div id="joystick">
+            <div class="joystick-thumb"></div>
+        </div>
+    </div>
+
+    <!-- Zone Labels -->
+    <div id="zone-labels"></div>
+
+    <!-- Overlay UI -->
+    <div id="overlay" class="overlay hidden">
+        <button class="close-btn" id="close-overlay">✕</button>
+        <div class="overlay-content" id="overlay-content"></div>
+    </div>
+
+    <!-- Three.js Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
