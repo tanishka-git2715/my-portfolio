@@ -153,6 +153,7 @@ class Portfolio3D {
 // Initialize when DOM is loaded
 window.addEventListener('DOMContentLoaded', () => {
     const app = new Portfolio3D();
+    window.portfolioApp = app; // Expose for debugging/testing
 
     // Handle window resize
     window.addEventListener('resize', () => app.handleResize());
