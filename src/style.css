@@ -292,13 +292,14 @@ kbd {
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Joystick - Hidden by default on desktop */
+/* Joystick - Dynamic on mobile */
 #joystick-zone {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 150px;
-    height: 150px;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    /* Left half of screen */
+    height: 100vh;
     display: none;
     /* Hidden on desktop */
     z-index: 1000;
@@ -311,11 +312,14 @@ kbd {
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    /* Changed to absolute for dynamic pos */
+    display: none;
+    /* Hidden until touched */
     backdrop-filter: blur(5px);
+    transform: translate(-50%, -50%);
+    /* Center on touch */
+    pointer-events: none;
 }
 
 .joystick-thumb {

@@ -1,14 +1,15 @@
 export class Joystick {
     constructor(containerId) {
         this.container = document.getElementById(containerId);
+        this.joystickVisual = document.getElementById('joystick');
         this.thumb = this.container.querySelector('.joystick-thumb');
 
         this.active = false;
-        this.dragStart = { x: 0, y: 0 };
-        this.currentPos = { x: 0, y: 0 };
+        this.origin = { x: 0, y: 0 }; // Where the joystick "base" is currently
+        this.currentPos = { x: 0, y: 0 }; // Where the thumb is
         this.vector = { x: 0, y: 0 }; // Normalized vector (-1 to 1)
 
-        this.maxRadius = 40; // Max distance thumb can move
+        this.maxRadius = 60; // Max distance thumb can move
 
         this.setupEvents();
     }
@@ -19,60 +20,51 @@ export class Joystick {
         document.addEventListener('touchmove', this.handleMove.bind(this), { passive: false });
         document.addEventListener('touchend', this.handleEnd.bind(this));
 
-        // Mouse events (for testing on desktop)
-        this.container.addEventListener('mousedown', this.handleStart.bind(this));
-        document.addEventListener('mousemove', this.handleMove.bind(this));
-        document.addEventListener('mouseup', this.handleEnd.bind(this));
+        // Disable mouse events for dynamic joystick to avoid confusion or just treat click as touch
+        // For simplicity, mostly relying on Touch for mobile experience
     }
 
     handleStart(e) {
-        // Only trigger if touching the joystick container
-        if (e.target !== this.container && e.target !== this.thumb) return;
+        if (e.target !== this.container && !this.container.contains(e.target)) return;
 
         e.preventDefault();
+
+        const clientX = e.touches[0].clientX;
+        const clientY = e.touches[0].clientY;
+
+        this.startJoystick(clientX, clientY);
+    }
+
+    startJoystick(x, y) {
         this.active = true;
-        this.container.classList.add('active');
+        this.joystickVisual.classList.add('active');
 
-        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        // Set origin to touch position
+        this.origin = { x, y };
 
-        this.dragStart = { x: clientX, y: clientY };
-        this.updatePosition(clientX, clientY);
+        // Position visual joystick
+        this.joystickVisual.style.left = `${x}px`;
+        this.joystickVisual.style.top = `${y}px`;
+
+        // Reset thumb
+        this.thumb.style.transform = `translate(0px, 0px)`;
+        this.vector = { x: 0, y: 0 };
     }
 
     handleMove(e) {
         if (!this.active) return;
-
-        // Prevent scrolling while using joystick
         if (e.cancelable) e.preventDefault();
 
         const clientX = e.touches ? e.touches[0].clientX : e.clientX;
         const clientY = e.touches ? e.touches[0].clientY : e.clientY;
 
-        this.updatePosition(clientX, clientY);
+        this.updateStick(clientX, clientY);
     }
 
-    handleEnd() {
-        if (!this.active) return;
+    updateStick(clientX, clientY) {
+        let dx = clientX - this.origin.x;
+        let dy = clientY - this.origin.y;
 
-        this.active = false;
-        this.container.classList.remove('active');
-        this.vector = { x: 0, y: 0 };
-
-        // Reset thumb position
-        this.thumb.style.transform = `translate(0px, 0px)`;
-    }
-
-    updatePosition(clientX, clientY) {
-        // Calculate deltas based on container center
-        const rect = this.container.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-
-        let dx = clientX - centerX;
-        let dy = clientY - centerY;
-
-        // Calculate distance
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         // Clamp to radius
@@ -82,11 +74,19 @@ export class Joystick {
             dy = Math.sin(angle) * this.maxRadius;
         }
 
-        // Update vector (-1 to 1)
+        // Update vector
         this.vector.x = dx / this.maxRadius;
         this.vector.y = dy / this.maxRadius;
 
         // Move thumb
         this.thumb.style.transform = `translate(${dx}px, ${dy}px)`;
+    }
+
+    handleEnd() {
+        if (!this.active) return;
+
+        this.active = false;
+        this.joystickVisual.classList.remove('active');
+        this.vector = { x: 0, y: 0 };
     }
 }
